@@ -68,7 +68,7 @@
         /* Header */
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             padding: 2rem 0;
             margin-bottom: 4rem;
@@ -80,6 +80,16 @@
             font-weight: normal;
             color: var(--text);
             letter-spacing: -0.02em;
+        }
+
+        /* Footer Auth */
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(42, 40, 38, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         #auth-container {
@@ -178,13 +188,16 @@
 
         .tool-card {
             background: var(--card-bg);
-            border-radius: 16px;
-            padding: 2.5rem;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
             box-shadow: 0 2px 20px var(--shadow);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
             animation: slideUp 0.6s ease-out backwards;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
         }
 
         .tool-card:nth-child(1) { animation-delay: 0.1s; }
@@ -225,24 +238,29 @@
         }
 
         .tool-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 2rem;
+            margin: 0;
             display: block;
+            flex-shrink: 0;
+        }
+
+        .tool-content {
+            flex: 1;
         }
 
         .tool-card h3 {
             font-family: 'DM Serif Display', serif;
-            font-size: 1.75rem;
-            margin-bottom: 0.75rem;
+            font-size: 1.35rem;
+            margin-bottom: 0.35rem;
             font-weight: normal;
         }
 
         .tool-card p {
             color: var(--text);
             opacity: 0.7;
-            margin-bottom: 1.5rem;
-            font-size: 1rem;
-            line-height: 1.6;
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
 
         .tool-link {
@@ -321,13 +339,6 @@
     <div class="container">
         <header>
             <div class="logo">Offload</div>
-            <div id="auth-container">
-                <div id="user-info">
-                    <span id="user-email"></span>
-                    <button id="logout-btn">Sign Out</button>
-                </div>
-                <button id="login-btn">Sign In</button>
-            </div>
         </header>
 
         <section class="hero">
@@ -352,26 +363,42 @@
             <div class="tools-grid">
                 <div class="tool-card">
                     <span class="tool-icon">💰</span>
-                    <h3>Daily Allowance</h3>
-                    <p>Track your daily spending with a simple allowance system that helps you stay on budget</p>
-                    <a href="https://dailyallowance.web.app" class="tool-link">Open tool</a>
+                    <div class="tool-content">
+                        <h3>Daily Allowance</h3>
+                        <p>Track your daily spending with a simple allowance system that helps you stay on budget</p>
+                        <a href="https://dailyallowance.web.app" class="tool-link">Open tool</a>
+                    </div>
                 </div>
 
                 <div class="tool-card">
                     <span class="tool-icon">✓</span>
-                    <h3>Self Check-In</h3>
-                    <p>Regular check-ins to track your wellbeing, mood, and personal progress over time</p>
-                    <a href="https://selfcheckintool.web.app" class="tool-link">Open tool</a>
+                    <div class="tool-content">
+                        <h3>Self Check-In</h3>
+                        <p>Regular check-ins to track your wellbeing, mood, and personal progress over time</p>
+                        <a href="https://selfcheckintool.web.app" class="tool-link">Open tool</a>
+                    </div>
                 </div>
 
                 <div class="tool-card">
                     <span class="tool-icon">📅</span>
-                    <h3>Timeline Viewer</h3>
-                    <p>Visualize events and milestones in an interactive timeline format</p>
-                    <a href="https://timelineviewer.web.app" class="tool-link">Open tool</a>
+                    <div class="tool-content">
+                        <h3>Timeline Viewer</h3>
+                        <p>Visualize events and milestones in an interactive timeline format</p>
+                        <a href="https://timelineviewer.web.app" class="tool-link">Open tool</a>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <footer>
+            <div id="auth-container">
+                <div id="user-info">
+                    <span id="user-email"></span>
+                    <button id="logout-btn">Sign Out</button>
+                </div>
+                <button id="login-btn">Sign In</button>
+            </div>
+        </footer>
     </div>
 
     <!-- Firebase SDK -->
