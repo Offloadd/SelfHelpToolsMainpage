@@ -310,6 +310,119 @@
                 </div>
             </div>
         </section>
+
+        <!-- Privacy Policy & Terms - Collapsible -->
+        <section style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e5e7eb;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <!-- Privacy Policy Accordion -->
+                <div style="margin-bottom: 1rem; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden;">
+                    <button onclick="toggleSection('privacy')" style="width: 100%; padding: 1rem 1.5rem; background: white; border: none; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: 'DM Serif Display', serif; font-size: 1.1rem; color: var(--text);">
+                        <span>Privacy Policy</span>
+                        <span id="privacy-icon" style="transition: transform 0.3s;">▼</span>
+                    </button>
+                    <div id="privacy" style="display: none; padding: 0 1.5rem 1.5rem; line-height: 1.7; font-size: 0.95rem;">
+                        <p style="margin-bottom: 1rem;"><strong>Effective Date:</strong> March 14, 2026</p>
+                        
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">1. Information We Collect</h3>
+                        <p style="margin-bottom: 0.5rem;">Offload collects:</p>
+                        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                            <li><strong>Account Information:</strong> Your email address (for authentication)</li>
+                            <li><strong>User Data:</strong> CSV data and datasets you create and save</li>
+                        </ul>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">2. How We Use Your Information</h3>
+                        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                            <li>Provide and maintain the Offload tools</li>
+                            <li>Authenticate your account and secure your data</li>
+                            <li>Store your datasets in Firebase (Google Cloud Platform)</li>
+                            <li>Send important service updates (no marketing emails currently, but may offer opt-in updates)</li>
+                        </ul>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">3. Data Storage and Security</h3>
+                        <p style="margin-bottom: 1rem;">Your data is stored securely using Firebase (Google Cloud Platform). We implement industry-standard security measures.</p>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">4. Data Sharing</h3>
+                        <p style="margin-bottom: 1rem;">We do not sell or share your personal data with third parties. You control your data and can export or share it as you choose.</p>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">5. Analytics</h3>
+                        <p style="margin-bottom: 1rem;">We may implement basic usage analytics in the future to improve the service. If we add analytics, we will update this policy.</p>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">6. Your Rights</h3>
+                        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                            <li>Access your data at any time</li>
+                            <li>Export your data from the tools</li>
+                            <li>Delete your account and data by contacting us</li>
+                            <li>Opt out of future marketing communications</li>
+                        </ul>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">7. Contact</h3>
+                        <p style="margin-bottom: 0;">Contact: <a href="mailto:offloadapptool@gmail.com" style="color: var(--accent); text-decoration: none;">offloadapptool@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Terms of Service Accordion -->
+                <div style="margin-bottom: 2rem; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden;">
+                    <button onclick="toggleSection('terms')" style="width: 100%; padding: 1rem 1.5rem; background: white; border: none; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: 'DM Serif Display', serif; font-size: 1.1rem; color: var(--text);">
+                        <span>Terms of Service</span>
+                        <span id="terms-icon" style="transition: transform 0.3s;">▼</span>
+                    </button>
+                    <div id="terms" style="display: none; padding: 0 1.5rem 1.5rem; line-height: 1.7; font-size: 0.95rem;">
+                        <p style="margin-bottom: 1rem;"><strong>Effective Date:</strong> March 14, 2026</p>
+                        
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">1. Acceptance of Terms</h3>
+                        <p style="margin-bottom: 1rem;">By using Offload tools, you agree to these Terms of Service.</p>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">2. Service Description</h3>
+                        <p style="margin-bottom: 1rem;">Offload provides web-based tools for personal tracking and data management. The service is provided "as is" without warranties.</p>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">3. User Responsibilities</h3>
+                        <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                            <li>Provide accurate information when creating an account</li>
+                            <li>Keep your password secure and confidential</li>
+                            <li>Use the service for lawful purposes only</li>
+                            <li>Not attempt to interfere with or disrupt the service</li>
+                            <li>Backup your own data regularly</li>
+                        </ul>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">4. Data Ownership</h3>
+                        <p style="margin-bottom: 1rem;">You retain full ownership of all data you create using Offload. We claim no ownership rights to your content.</p>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">5. Service Availability</h3>
+                        <p style="margin-bottom: 1rem;">We strive to maintain service availability but do not guarantee uninterrupted access.</p>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">6. Limitation of Liability</h3>
+                        <p style="margin-bottom: 1rem;">Offload and its operators are not liable for any data loss or damages arising from your use of the service. You use the service at your own risk.</p>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">7. Account Termination</h3>
+                        <p style="margin-bottom: 1rem;">We reserve the right to suspend or terminate accounts that violate these terms. You may delete your account at any time by contacting us.</p>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">8. Changes to Terms</h3>
+                        <p style="margin-bottom: 1rem;">We may update these Terms of Service from time to time. Continued use constitutes acceptance of updated terms.</p>
+
+                        <h3 style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">9. Contact</h3>
+                        <p style="margin-bottom: 0;">Contact: <a href="mailto:offloadapptool@gmail.com" style="color: var(--accent); text-decoration: none;">offloadapptool@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <p style="text-align: center; font-size: 0.9rem; color: #6b7280; margin-top: 2rem;">
+                    © 2026 Offloadwebapp. All rights reserved.
+                </p>
+            </div>
+        </section>
     </div>
+    
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                section.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
 </body>
 </html>
